@@ -115,7 +115,7 @@ startGame = () =>{
     availableQuestions = [...questions] //spread operator
     getNewQuestions()// function to capture new question
 }
-//function getquestion
+//function getquestion once user has maxed the questions
 getNewQuestions = () =>{
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score) //save to localstorage
