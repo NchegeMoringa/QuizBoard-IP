@@ -74,7 +74,7 @@ getNewQuestions = () =>{
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score) //save to localstorage
 
-        return window.location.assign('/html/end.html') // the close html page.
+        return window.location.assign('../html/end.html') // the close html page.
     }
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
