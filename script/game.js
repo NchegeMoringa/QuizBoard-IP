@@ -103,8 +103,8 @@ choices.forEach(choice =>{
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' :
-        'incorrect'
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : // to toggle to the green css
+            'incorrect' // to toggle to the green css
 
         if(classToApply === 'correct'){
             incrementScore(SCORE_POINTS)
@@ -120,7 +120,7 @@ choices.forEach(choice =>{
 })
 
 incrementScore = num =>{
-    score +num
-    scoreText.innerText = score
+    score +=num
+    scoreText.innerText = score //score incementor
 }
 startGame()
