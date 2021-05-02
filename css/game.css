@@ -47,7 +47,8 @@ body{
     border: 0.2rem solid rgb(11,223,36);
     margin-top: 2rem;
     border-radius: 50px;
-    
+    overflow: hidden;
+
 }
 @media screen and (max-width:760px){
     .choice-container{
