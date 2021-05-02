@@ -4,7 +4,7 @@ const finalScore = document.querySelector('#finalScore')
 const mostRecentScore = document.querySelector('#mostRecentScore')
 
 
-const highScores = JSON.parse(localStorage.getItem(highScores)) || []
+const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 const MAX_HIGH_SCORES = 5
 
@@ -30,6 +30,6 @@ saveHighScore = e => {
 
     highScores.splice(5)
 
-    localStorage.setItem('highscores',JSON.stringify(highscores))
+    localStorage.setItem('highscores',JSON.stringify('highscores'))
     window.location.assign('/')
 }
