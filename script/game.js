@@ -19,7 +19,7 @@ let questions =[
         choice2: 'Kisumu',
         choice3: 'Kajiado',
         choice4: 'Mombasa',
-        answer: 'Nairobi',
+        answer: 1,
 
     },
     {
@@ -32,27 +32,36 @@ let questions =[
 
     },
     {
-        question: 'what is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
+        question: 'What is the square root of 25?',
+        choice1: '34',
+        choice2: '5',
         choice3: '6',
-        choice4: '200',
+        choice4: '67',
         answer: 2,
 
     },
     {
-        question: 'what is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '6',
-        choice4: '200',
+        question: 'Who is the 1st President Of Kenya?',
+        choice1: 'Donald Trump',
+        choice2: 'Uhuru Kenyatta',
+        choice3: 'Yoweri Museveni',
+        choice4: 'Jomo Kenyatta',
+        answer: 4,
+
+    },
+        {
+        question: 'Whic of the below is not a Continent?',
+        choice1: 'Africa',
+        choice2: 'USA',
+        choice3: 'Europe',
+        choice4: 'Asia',
         answer: 2,
 
     }
 
 ]
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 5
 // function start game
 startGame = () =>{
     questionCounter = 0
@@ -62,10 +71,10 @@ startGame = () =>{
 }
 //function getquestion
 getNewQuestions = () =>{
-    if(availableQuestions.length ===0 || questionCounter > MAX_QUESTIONS){
-        localStorage.setItem('mostRecentScore',score)
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+        localStorage.setItem('mostRecentScore',score) //save to localstorage
 
-        return window.location.assign('/end.html')
+        return window.location.assign('/end.html') // the close html page.
     }
     questionCounter++
     progressText.innerText = `Question ${questionCounter}' of ${MAX_QUESTIONS}`
@@ -110,3 +119,8 @@ choice.forEach(choice =>{
     })
 })
 
+incrementScore = num =>{
+    score +num
+    scoreText.innerText = score
+}
+startGame()
