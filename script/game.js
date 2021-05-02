@@ -13,7 +13,7 @@ let availableQuestions = []
 
 let questions =[
     //array object
-    {
+    { //question 1
         question: 'What is the capital of Kenya?',
         choice1: 'Nairobi',
         choice2: 'Kisumu',
@@ -22,7 +22,7 @@ let questions =[
         answer: 1,
 
     },
-    {
+    {   //question 2
         question: 'what is 2 + 2?',
         choice1: '2',
         choice2: '4',
@@ -31,7 +31,7 @@ let questions =[
         answer: 2,
 
     },
-    {
+    {   //question 3
         question: 'What is the square root of 25?',
         choice1: '34',
         choice2: '5',
@@ -40,7 +40,7 @@ let questions =[
         answer: 2,
 
     },
-    {
+    {   //question 4
         question: 'Who is the 1st President Of Kenya?',
         choice1: 'Donald Trump',
         choice2: 'Uhuru Kenyatta',
@@ -50,6 +50,7 @@ let questions =[
 
     },
         {
+            //question 5
         question: 'Whic of the below is not a Continent?',
         choice1: 'Africa',
         choice2: 'USA',
@@ -57,11 +58,56 @@ let questions =[
         choice4: 'Asia',
         answer: 2,
 
+    },
+    {   //question 6
+        question: 'Who is the DP of Kenya?',
+        choice1: 'Donald Trump',
+        choice2: 'Uhuru Kenyatta',
+        choice3: 'Yoweri Museveni',
+        choice4: 'William Ruto',
+        answer: 4,
+
+    },
+    {   //question 7
+        question: 'What is 10 * 10 * 0?',
+        choice1: '10',
+        choice2: '0',
+        choice3: '1000',
+        choice4: '100000',
+        answer: 2,
+
+    },
+    {   //question 8
+        question: 'Which of the Countries below is not in Africa?',
+        choice1: 'Kenya',
+        choice2: 'Nigeria',
+        choice3: 'Jamaica',
+        choice4: 'Egypt',
+        answer: 3,
+
+    },
+    {   //question 9
+        question: 'Country with the Highest population?',
+        choice1: 'Zambia',
+        choice2: 'Somalia',
+        choice3: 'India',
+        choice4: 'Russia',
+        answer: 3,
+
+    },
+    {   //question 10
+        question: 'Headquarter of Toyota is in which Country?',
+        choice1: 'USA',
+        choice2: 'Europe',
+        choice3: 'No Idea',
+        choice4: 'Japan',
+        answer: 4,
+
     }
 
 ]
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 5
+const SCORE_POINTS = 10 // 10 points per question
+const MAX_QUESTIONS = 10
 // function start game
 startGame = () =>{
     questionCounter = 0
