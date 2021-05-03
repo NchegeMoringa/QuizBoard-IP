@@ -119,8 +119,17 @@ startGame = () =>{
 getNewQuestions = () =>{
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score) //save to localstorage
-
-        return window.location.assign('../end.html') // the close html page.
+        //highscore low and failry scored if statements
+        if(score >= 80){
+            return window.location.assign('highscore1.html')
+        }
+        else if (score >= 50) {
+            return window.location.assign('failyscore.html')
+        }
+        else{
+            return window.location.assign('lowscore.html')
+        }
+      
     }
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
