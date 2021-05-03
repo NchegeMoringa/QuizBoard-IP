@@ -14,7 +14,7 @@ let availableQuestions = []
 let questions =[
     //array object
     { //question 1
-        question: 'What is the capital of Kenya?',
+        question: 'Select the capital of Kenya?',
         choice1: 'Nairobi',
         choice2: 'Kisumu',
         choice3: 'Kajiado',
@@ -23,7 +23,7 @@ let questions =[
 
     },
     {   //question 2
-        question: 'what is 2 + 2?',
+        question: 'Sum of 2 + 2 = ?',
         choice1: '2',
         choice2: '4',
         choice3: '6',
@@ -51,7 +51,7 @@ let questions =[
     },
         {
             //question 5
-        question: 'Whic of the below is not a Continent?',
+        question: 'Which of the below is not a Continent?',
         choice1: 'Africa',
         choice2: 'USA',
         choice3: 'Europe',
@@ -60,7 +60,7 @@ let questions =[
 
     },
     {   //question 6
-        question: 'Who is the DP of Kenya?',
+        question: 'Who is the current DP of Kenya?',
         choice1: 'Donald Trump',
         choice2: 'Uhuru Kenyatta',
         choice3: 'Yoweri Museveni',
@@ -69,7 +69,7 @@ let questions =[
 
     },
     {   //question 7
-        question: 'What is 10 * 10 * 0?',
+        question: 'Calculate answer of 10 * 10 * 0 =?',
         choice1: '10',
         choice2: '0',
         choice3: '1000',
@@ -87,7 +87,7 @@ let questions =[
 
     },
     {   //question 9
-        question: 'Country with the Highest population?',
+        question: 'Select Country with the Highest population?',
         choice1: 'Zambia',
         choice2: 'Somalia',
         choice3: 'India',
